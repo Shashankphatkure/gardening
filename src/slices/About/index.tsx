@@ -128,7 +128,7 @@ const About = ({ slice }: AboutProps): JSX.Element => {
               >
                 <h1
                   style={{
-                    fontFamily: '"Saol Display"',
+                    fontFamily: "Saol Display",
                     fontWeight: 400,
                     fontSize: "55px",
                     color: "rgb(0, 0, 0)",
