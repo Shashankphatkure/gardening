@@ -35,10 +35,13 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
-            "hero": {
+            "services": {
               "type": "SharedSlice"
             },
-            "text": {
+            "about": {
+              "type": "SharedSlice"
+            },
+            "hero": {
               "type": "SharedSlice"
             }
           }

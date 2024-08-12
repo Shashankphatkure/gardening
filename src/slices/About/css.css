@@ -1,0 +1,474 @@
+@font-face {
+  font-family: "Saol Display";
+  src:
+    url("https://hugheslandscape.co/wp-content/fonts/SaolDisplay-Regular.woff2")
+      format("woff2"),
+    url("https://hugheslandscape.co/wp-content/fonts/SaolDisplay-Regular.woff")
+      format("woff");
+  font-weight: normal;
+}
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap");
+body {
+  font-size: 100%;
+  background: transparent;
+  line-height: 1.7em;
+  font-family: "Montserrat", Helvetica, Arial, Lucida, sans-serif;
+  color: #000000;
+  font-weight: 400;
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+:where(body) {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+body {
+  font-family:
+    Open Sans,
+    Arial,
+    sans-serif;
+  font-size: 14px;
+  color: #666;
+  background-color: #fff;
+  line-height: 1.7em;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-size: 15px;
+}
+
+body {
+  color: #000000;
+}
+
+body {
+  font-family: "Montserrat", Helvetica, Arial, Lucida, sans-serif;
+}
+
+body {
+  font-weight: 400;
+}
+
+:root :where(body) {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+.section-g58 {
+  position: relative;
+  background-color: #fff;
+  background-position: 50%;
+  background-size: cover;
+}
+
+@media (min-width: 981px) {
+  .section-g58 {
+    padding: 4% 0;
+  }
+}
+
+@media only screen and (min-width: 1462px) {
+  .section-g58 {
+    padding: 58px 0;
+  }
+}
+
+.section-17t.section-g58 {
+  padding-top: 100px;
+  padding-bottom: 0px;
+}
+
+.row-z7c {
+  width: 80%;
+  max-width: 1080px;
+  margin: auto;
+  position: relative;
+}
+
+.row-z7c {
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 981px) {
+  .row-z7c {
+    padding: 2% 0;
+  }
+}
+
+.row-z7c {
+  max-width: 1170px;
+}
+
+@media only screen and (min-width: 1462px) {
+  .row-z7c {
+    padding: 29px 0;
+  }
+}
+
+.footer-gql {
+  max-width: 100%;
+}
+
+@media only screen and (min-width: 981px) {
+  .footer-gql {
+    width: 100%;
+  }
+}
+
+@media (min-width: 981px) {
+  .row-z7c.column-fmi {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.footer-gql.row-z7c {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.row-z7c:after,
+.et_pb_row_inner:after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+  width: 0;
+}
+
+.et_-qsr {
+  mix-blend-mode: unset !important;
+}
+
+.column-hjy {
+  float: left;
+  background-size: cover;
+  background-position: 50%;
+  position: relative;
+  z-index: 2;
+  min-height: 1px;
+}
+
+.column-hjy {
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 981px) {
+  .column-hjy {
+    margin-right: 5.5%;
+  }
+
+  .column-kdk {
+    width: 100%;
+  }
+}
+
+.row-z7c .column-hjy.et-last-4xt,
+.row-z7c .column-hjy:last-child {
+  margin-right: 0 !important;
+}
+
+@media (min-width: 981px) {
+  .row-z7c .column-hjy.et-last-4xt,
+  .row-z7c .column-hjy:last-child {
+    margin-right: 0 !important;
+  }
+
+  .row-z7c.column-fmi > .column-hjy {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+}
+
+.et_-aqp {
+  position: relative;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.et_-aqp {
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-duration: 0.2s;
+  animation-duration: 0.2s;
+}
+
+.text-i26 {
+  word-wrap: break-word;
+}
+
+.footer-1oz {
+  margin-bottom: 0px !important;
+}
+
+.et_-aqp.text-jpi {
+  text-align: left;
+}
+
+@media (min-width: 981px) {
+  .column-kdk .et_-aqp {
+    margin-bottom: 2.75%;
+  }
+}
+
+.et_-6kb {
+  cursor: pointer;
+}
+
+.footer-oao {
+  font-weight: 700;
+  margin-bottom: 20px !important;
+}
+
+.image-7ez {
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 0;
+}
+
+.image-7ez {
+  display: block;
+}
+
+.footer-r5o {
+  width: 100%;
+  max-width: 100% !important;
+  text-align: left;
+  margin-left: 0;
+}
+
+@media (min-width: 981px) {
+  div.row-z7c .column-hjy .et_-aqp:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.text-scd {
+  position: relative;
+}
+
+.text-i26 > :last-child {
+  padding-bottom: 0;
+}
+
+span {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+.image-7ez .image-arh {
+  display: inline-block;
+  position: relative;
+  max-width: 100%;
+}
+
+.footer-r5o .image-arh {
+  width: 100%;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+h2 {
+  color: #333;
+  padding-bottom: 10px;
+  line-height: 1em;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+h2 {
+  color: #000000;
+}
+
+h2 {
+  font-size: 47px;
+}
+
+h2 {
+  font-family: "Saol Display";
+  font-weight: 400 !important;
+}
+
+.footer-1oz h2 {
+  text-transform: uppercase;
+  font-size: 50px;
+  line-height: 1.2em;
+  text-align: center;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+h3 {
+  color: #333;
+  padding-bottom: 10px;
+  line-height: 1em;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+h3 {
+  color: #000000;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+h3 {
+  font-family: "Saol Display";
+  font-weight: 400 !important;
+}
+
+.footer-oao h3 {
+  text-transform: uppercase;
+  font-size: 30px;
+  text-align: center;
+}
+
+img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.image-7ez img {
+  position: relative;
+}
+
+.footer-r5o img {
+  width: 100%;
+}
+
+a:where(:not(.wp-element-button)) {
+  text-decoration: underline;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+a {
+  color: #2ea3f2;
+}
+
+a {
+  text-decoration: none;
+}
+
+h3 a {
+  color: inherit;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}

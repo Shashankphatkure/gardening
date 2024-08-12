@@ -1,18 +1,16 @@
 {
-  "id": "about",
+  "id": "services",
   "type": "SharedSlice",
-  "name": "About",
-  "description": "About",
+  "name": "Services",
+  "description": "Services",
   "variations": [
     {
       "id": "default",
-      "name": "About",
+      "name": "Default",
       "docURL": "...",
       "version": "initial",
       "description": "Default",
-      "imageUrl": "",
-      "primary": {},
-      "items": {}
+      "imageUrl": ""
     }
   ]
 }

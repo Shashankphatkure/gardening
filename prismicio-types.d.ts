@@ -61,7 +61,7 @@ export type NavigationDocument<Lang extends string = string> =
     Lang
   >;
 
-type PageDocumentDataSlicesSlice = HeroSlice | TextSlice;
+type PageDocumentDataSlicesSlice = ServicesSlice | AboutSlice | HeroSlice;
 
 /**
  * Content for Page documents
@@ -182,7 +182,7 @@ export type AllDocumentTypes =
   | SettingsDocument;
 
 /**
- * Default variation for About Slice
+ * About variation for About Slice
  *
  * - **API ID**: `default`
  * - **Description**: Default
@@ -209,7 +209,7 @@ type AboutSliceVariation = AboutSliceDefault;
 export type AboutSlice = prismic.SharedSlice<"about", AboutSliceVariation>;
 
 /**
- * Default variation for Hero Slice
+ * Hero variation for Hero Slice
  *
  * - **API ID**: `default`
  * - **Description**: Default
@@ -234,6 +234,36 @@ type HeroSliceVariation = HeroSliceDefault;
  * - **Documentation**: https://prismic.io/docs/slice
  */
 export type HeroSlice = prismic.SharedSlice<"hero", HeroSliceVariation>;
+
+/**
+ * Default variation for Services Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type ServicesSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Record<string, never>,
+  never
+>;
+
+/**
+ * Slice variation for *Services*
+ */
+type ServicesSliceVariation = ServicesSliceDefault;
+
+/**
+ * Services Shared Slice
+ *
+ * - **API ID**: `services`
+ * - **Description**: Services
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type ServicesSlice = prismic.SharedSlice<
+  "services",
+  ServicesSliceVariation
+>;
 
 declare module "@prismicio/client" {
   interface CreateClient {
@@ -260,6 +290,9 @@ declare module "@prismicio/client" {
       HeroSlice,
       HeroSliceVariation,
       HeroSliceDefault,
+      ServicesSlice,
+      ServicesSliceVariation,
+      ServicesSliceDefault,
     };
   }
 }
