@@ -29,46 +29,15 @@ export default async function RootLayout({
 }
 
 async function Header() {
-  const client = createClient();
-  let settings;
-  let navigation;
-
-  try {
-    settings = await client.getSingle("settings");
-  } catch (error) {
-    console.error("Failed to fetch settings:", error);
-    settings = { data: { siteTitle: "Default Title" } }; // Provide a default
-  }
-
-  try {
-    navigation = await client.getSingle("navigation");
-  } catch (error) {
-    console.error("Failed to fetch navigation:", error);
-    navigation = { data: { links: [] } }; // Provide a default
-  }
-
   return (
     <Bounded as="header" yPadding="sm">
       <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-3 leading-none">
         <PrismicNextLink
           href="/"
           className="text-xl font-semibold tracking-tight"
-        >
-          <PrismicText field={settings.data.siteTitle} />
-        </PrismicNextLink>
+        ></PrismicNextLink>
         <nav>
-          <ul className="flex flex-wrap gap-6 md:gap-10">
-            {navigation.data?.links?.map((item) => (
-              <li
-                key={asText(item.label)}
-                className="font-semibold tracking-tight text-slate-800"
-              >
-                <PrismicNextLink field={item.link}>
-                  <PrismicText field={item.label} />
-                </PrismicNextLink>
-              </li>
-            ))}
-          </ul>
+          <ul className="flex flex-wrap gap-6 md:gap-10"></ul>
         </nav>
       </div>
     </Bounded>
