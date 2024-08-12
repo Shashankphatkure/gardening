@@ -30,8 +30,22 @@ export default async function RootLayout({
 
 async function Header() {
   const client = createClient();
-  const settings = await client.getSingle("settings");
-  const navigation = await client.getSingle("navigation");
+  let settings;
+  let navigation;
+
+  try {
+    settings = await client.getSingle("settings");
+  } catch (error) {
+    console.error("Failed to fetch settings:", error);
+    settings = { data: { siteTitle: "Default Title" } }; // Provide a default
+  }
+
+  try {
+    navigation = await client.getSingle("navigation");
+  } catch (error) {
+    console.error("Failed to fetch navigation:", error);
+    navigation = { data: { links: [] } }; // Provide a default
+  }
 
   return (
     <Bounded as="header" yPadding="sm">
@@ -44,7 +58,7 @@ async function Header() {
         </PrismicNextLink>
         <nav>
           <ul className="flex flex-wrap gap-6 md:gap-10">
-            {navigation.data?.links.map((item) => (
+            {navigation.data?.links?.map((item) => (
               <li
                 key={asText(item.label)}
                 className="font-semibold tracking-tight text-slate-800"
