@@ -1802,7 +1802,6 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
                                       name="input_10"
                                       id="inp-42w"
                                       type="text"
-                                      defaultValue
                                       className="lar-jln"
                                       placeholder="First Name"
                                     />{" "}
@@ -1825,7 +1824,6 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
                                       name="input_20"
                                       id="inp-1oi"
                                       type="text"
-                                      defaultValue
                                       className="lar-jln"
                                       placeholder="Last Name"
                                     />{" "}
@@ -1848,7 +1846,6 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
                                       name="input_12"
                                       id="inp-9og"
                                       type="email"
-                                      defaultValue
                                       className="lar-jln"
                                       placeholder="Email"
                                     />
@@ -1871,7 +1868,6 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
                                       name="input_11"
                                       id="inp-g5o"
                                       type="tel"
-                                      defaultValue
                                       className="lar-jln"
                                       placeholder="Phone Number"
                                     />
@@ -1908,7 +1904,6 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
                                       name="input_18"
                                       id="inp-2r5"
                                       type="text"
-                                      defaultValue
                                       className="lar-jln"
                                       placeholder="Address"
                                     />{" "}
@@ -1932,7 +1927,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
                                       id="inp-kmb"
                                       className="lar-jln select-naz"
                                     >
-                                      <option value>Budget</option>
+                                      <option>Budget</option>
                                       <option value="$50,000-100k">
                                         $50,000-100k
                                       </option>
@@ -2184,7 +2179,6 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
                                 type="hidden"
                                 className="form-ivc"
                                 name="gform_unique_id"
-                                defaultValue
                                 id="gfo-y8q"
                               />
                               <input
@@ -2211,7 +2205,6 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
                               <input
                                 type="hidden"
                                 name="gform_field_values"
-                                defaultValue
                                 id="gfo-ttw"
                               />
                             </div>
