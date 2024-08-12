@@ -35,6 +35,27 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
+            "testimonials": {
+              "type": "SharedSlice"
+            },
+            "portfolio": {
+              "type": "SharedSlice"
+            },
+            "instagram": {
+              "type": "SharedSlice"
+            },
+            "header_top": {
+              "type": "SharedSlice"
+            },
+            "header": {
+              "type": "SharedSlice"
+            },
+            "footer": {
+              "type": "SharedSlice"
+            },
+            "awards": {
+              "type": "SharedSlice"
+            },
             "services": {
               "type": "SharedSlice"
             },

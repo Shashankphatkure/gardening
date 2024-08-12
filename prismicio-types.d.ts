@@ -61,7 +61,17 @@ export type NavigationDocument<Lang extends string = string> =
     Lang
   >;
 
-type PageDocumentDataSlicesSlice = ServicesSlice | AboutSlice | HeroSlice;
+type PageDocumentDataSlicesSlice =
+  | TestimonialsSlice
+  | PortfolioSlice
+  | InstagramSlice
+  | HeaderTopSlice
+  | HeaderSlice
+  | FooterSlice
+  | AwardsSlice
+  | ServicesSlice
+  | AboutSlice
+  | HeroSlice;
 
 /**
  * Content for Page documents
@@ -209,6 +219,117 @@ type AboutSliceVariation = AboutSliceDefault;
 export type AboutSlice = prismic.SharedSlice<"about", AboutSliceVariation>;
 
 /**
+ * Default variation for Awards Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type AwardsSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Record<string, never>,
+  never
+>;
+
+/**
+ * Slice variation for *Awards*
+ */
+type AwardsSliceVariation = AwardsSliceDefault;
+
+/**
+ * Awards Shared Slice
+ *
+ * - **API ID**: `awards`
+ * - **Description**: Awards
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type AwardsSlice = prismic.SharedSlice<"awards", AwardsSliceVariation>;
+
+/**
+ * Default variation for Footer Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type FooterSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Record<string, never>,
+  never
+>;
+
+/**
+ * Slice variation for *Footer*
+ */
+type FooterSliceVariation = FooterSliceDefault;
+
+/**
+ * Footer Shared Slice
+ *
+ * - **API ID**: `footer`
+ * - **Description**: Footer
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type FooterSlice = prismic.SharedSlice<"footer", FooterSliceVariation>;
+
+/**
+ * Default variation for Header Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type HeaderSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Record<string, never>,
+  never
+>;
+
+/**
+ * Slice variation for *Header*
+ */
+type HeaderSliceVariation = HeaderSliceDefault;
+
+/**
+ * Header Shared Slice
+ *
+ * - **API ID**: `header`
+ * - **Description**: Header
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type HeaderSlice = prismic.SharedSlice<"header", HeaderSliceVariation>;
+
+/**
+ * Default variation for HeaderTop Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type HeaderTopSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Record<string, never>,
+  never
+>;
+
+/**
+ * Slice variation for *HeaderTop*
+ */
+type HeaderTopSliceVariation = HeaderTopSliceDefault;
+
+/**
+ * HeaderTop Shared Slice
+ *
+ * - **API ID**: `header_top`
+ * - **Description**: HeaderTop
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type HeaderTopSlice = prismic.SharedSlice<
+  "header_top",
+  HeaderTopSliceVariation
+>;
+
+/**
  * Hero variation for Hero Slice
  *
  * - **API ID**: `default`
@@ -234,6 +355,66 @@ type HeroSliceVariation = HeroSliceDefault;
  * - **Documentation**: https://prismic.io/docs/slice
  */
 export type HeroSlice = prismic.SharedSlice<"hero", HeroSliceVariation>;
+
+/**
+ * Default variation for Instagram Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type InstagramSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Record<string, never>,
+  never
+>;
+
+/**
+ * Slice variation for *Instagram*
+ */
+type InstagramSliceVariation = InstagramSliceDefault;
+
+/**
+ * Instagram Shared Slice
+ *
+ * - **API ID**: `instagram`
+ * - **Description**: Instagram
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type InstagramSlice = prismic.SharedSlice<
+  "instagram",
+  InstagramSliceVariation
+>;
+
+/**
+ * Default variation for Portfolio Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type PortfolioSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Record<string, never>,
+  never
+>;
+
+/**
+ * Slice variation for *Portfolio*
+ */
+type PortfolioSliceVariation = PortfolioSliceDefault;
+
+/**
+ * Portfolio Shared Slice
+ *
+ * - **API ID**: `portfolio`
+ * - **Description**: Portfolio
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type PortfolioSlice = prismic.SharedSlice<
+  "portfolio",
+  PortfolioSliceVariation
+>;
 
 /**
  * Default variation for Services Slice
@@ -265,6 +446,36 @@ export type ServicesSlice = prismic.SharedSlice<
   ServicesSliceVariation
 >;
 
+/**
+ * Default variation for Testimonials Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type TestimonialsSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Record<string, never>,
+  never
+>;
+
+/**
+ * Slice variation for *Testimonials*
+ */
+type TestimonialsSliceVariation = TestimonialsSliceDefault;
+
+/**
+ * Testimonials Shared Slice
+ *
+ * - **API ID**: `testimonials`
+ * - **Description**: Testimonials
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type TestimonialsSlice = prismic.SharedSlice<
+  "testimonials",
+  TestimonialsSliceVariation
+>;
+
 declare module "@prismicio/client" {
   interface CreateClient {
     (
@@ -287,12 +498,33 @@ declare module "@prismicio/client" {
       AboutSlice,
       AboutSliceVariation,
       AboutSliceDefault,
+      AwardsSlice,
+      AwardsSliceVariation,
+      AwardsSliceDefault,
+      FooterSlice,
+      FooterSliceVariation,
+      FooterSliceDefault,
+      HeaderSlice,
+      HeaderSliceVariation,
+      HeaderSliceDefault,
+      HeaderTopSlice,
+      HeaderTopSliceVariation,
+      HeaderTopSliceDefault,
       HeroSlice,
       HeroSliceVariation,
       HeroSliceDefault,
+      InstagramSlice,
+      InstagramSliceVariation,
+      InstagramSliceDefault,
+      PortfolioSlice,
+      PortfolioSliceVariation,
+      PortfolioSliceDefault,
       ServicesSlice,
       ServicesSliceVariation,
       ServicesSliceDefault,
+      TestimonialsSlice,
+      TestimonialsSliceVariation,
+      TestimonialsSliceDefault,
     };
   }
 }
