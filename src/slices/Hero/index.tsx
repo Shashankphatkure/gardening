@@ -159,9 +159,9 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
                       features, and sophisticated lighting solutions.
                     </p>
                     <p>
-                      Whether you're looking to create a cozy backyard haven
-                      with a fire pit and ambient lighting, or an elegant
-                      outdoor entertainment area complete with a modern, stamped
+                      Whether youre looking to create a cozy backyard haven with
+                      a fire pit and ambient lighting, or an elegant outdoor
+                      entertainment area complete with a modern, stamped
                       concrete patio, our expert team is dedicated to bringing
                       your vision to life.
                     </p>
