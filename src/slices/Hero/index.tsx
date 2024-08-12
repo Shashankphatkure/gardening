@@ -29,60 +29,6 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
                           style={{ transform: "translate3d(0px, 0px, 0px)" }}
                         >
                           <div
-                            className="et_-qfo carousel-q1p carousel-cdi"
-                            style={{ width: "1519px" }}
-                          >
-                            <div className="et_-xd6">
-                              <div className="item-sr1">
-                                <div className="content-oaj">
-                                  <h4 className="title-h7b">
-                                    Transform Your Outdoors
-                                  </h4>
-                                  <h6 className="subtitle-ac6">
-                                    Fireplaces, Outdoor Landscaping, Pools,
-                                    &amp; More
-                                  </h6>
-                                  <div className="wrapper-re6">
-                                    <a
-                                      className="button-6jt"
-                                      href="https://hugheslandscape.co/estimate/"
-                                      data-icon="$"
-                                    >
-                                      GET AN ESTIMATE
-                                    </a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div
-                            className="et_-qfo carousel-q1p carousel-rz5"
-                            style={{ width: "1519px" }}
-                          >
-                            <div className="et_-xd6">
-                              <div className="item-sr1">
-                                <div className="content-oaj">
-                                  <h4 className="title-h7b">
-                                    Serenity Begins in Your Own Backyard
-                                  </h4>
-                                  <h6 className="subtitle-ac6">
-                                    Serving El Dorado County &amp; Surrounding
-                                    Areas
-                                  </h6>
-                                  <div className="wrapper-re6">
-                                    <a
-                                      className="button-6jt"
-                                      href="https://hugheslandscape.co/estimate/"
-                                      data-icon="$"
-                                    >
-                                      GET AN ESTIMATE
-                                    </a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div
                             className="et_-qfo carousel-q1p carousel-zmd"
                             style={{ width: "1519px" }}
                           >
@@ -93,8 +39,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
                                     Luxury Outdoor Living
                                   </h4>
                                   <h6 className="subtitle-ac6">
-                                    Serving El Dorado County &amp; Surrounding
-                                    Areas
+                                    Serving El Dorado County &amp; Surroundings
                                   </h6>
                                   <div className="wrapper-re6">
                                     <a
